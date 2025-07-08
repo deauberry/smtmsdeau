@@ -1,114 +1,115 @@
+/* === Global === */
 body {
   margin: 0;
-  font-family: Garamond, serif;
-  background-image: url(bg2.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 0;
+  font-family: garamond;
+  background-image: url("Bgimg.png"); 
+  background-size: cover;                 
+  background-position: center;            
+  background-repeat: no-repeat;       
   background-attachment: fixed;
-  color: #2a1a1a;
-  padding: 20px;
+  color: darkolivegreen;
+  text-align: left;
+  overflow: auto;
 }
-img {
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto 20px;
-  margin-bottom: 5px;
+
+/* === Container Layout === */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
+
 
 hr {
   border: none;
-  border-top: 2px solid #2a1a1a;
-  width: 80%;
-  margin: 20px auto;
-  margin-top: 0px;
+  border-top: 2px dotted darkolivegreen; /* You can change thickness and color */
+  margin: 20px 0; /* Optional: space above and below */
 }
 
-p {
-  font-size: 1.2em;
-  margin: 20px auto;
-  max-width: 600px;
-  text-align: center;
+.main-box {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid darkolivegreen;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.ul {
+
+
+/* === Navigation Links === */
+.sidebar-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid darkolivegreen;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.sidebar-box ul {
   list-style: none;
   padding: 0;
-  margin: 20px auto;
+  margin: 0;
 }
 
-.ul li {
-  display: inline;
-  margin: 0 10px;
-  align-content: center;
-  text-align: center;
-  list-style: none;
+.sidebar-box li {
+  margin: 10px 0;
+  text-align: left;
 }
 
-.container li {
-  list-style: none;
-}
-
-.nav {
-  text-align: center;
-  align-content: center;
-}
-
-.ul li a {
+.sidebar-box a {
+  display: block;
   text-decoration: none;
-  color: black;
-  font-weight: bold;
+  color: darkolivegreen;
+  border: 1px dotted darkolivegreen;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: left;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.container{
-  border: 1px solid black;
-  padding: 20px;
-  width: fit-content;
-  margin: 40px auto;
-  text-align: center;
-  background-color: #f9f9f9; 
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+.sidebar-box a:hover {
+  background-color: darkolivegreen;
+  color: white;
 }
 
-.boxtwo{
-  border: 1px solid black;
-  padding: 20px;
-  width: fit-content;
-  margin: 40px auto;
-  text-align: center;
-  background-color: #f9f9f9; 
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05); 
-}
-.nav-links {
-  border: 1px black;
-  width: fit-content;        
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  margin: 50px auto;
-  display: flex;
-  gap: 13px;
-  
+/* === Gallery Layout === */
+.art-gallery {
+  margin-top: 30px;
 }
 
-.nav-links li {
-  display: inline;
-  border: 1px solid black;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background-color: #f0f0f0;
-  transition: background-color 0.2s ease;
+.art-gallery h2 {
+  color: darkolivegreen;
+  margin-top: 40px;
+  font-size: 1.4em;
+  border-bottom: 2px solid darkolivegreen;
+  padding-bottom: 5px;
 }
 
-
-.nav-links li:hover {
-  background-color: seagreen;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold; 
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid darkolivegreen;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
