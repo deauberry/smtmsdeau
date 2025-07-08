@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head> 
-<title>it is sometimes - by deau</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>it is sometimes-</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <link rel="stylesheet" href="style.css">
-<img src="logohead.png">
-<hr>
-<p>"it is sometimes --" is a website filled with curated works of deauberry</p>
-<nav>
-<ul class="nav-links">
-<li><a href="about.html">about</a></li>
-<li><a href="links">links</a></li>
-<li><a href="blogs.html">blogs</a></li> 
-<li><a href="projects.html">projects</a></li> 
-<li><a href="works.html">curated</a></li>
-</ul>
-</nav>
-<div class="container">
-  <h2>[changelogs]</h2>
-  <ul>
-    <li>2025-17-07 - website created</li>
-    <li>2025-30-07 - I am back to continue this website</li>
-  </ul>
+
+  <div class="container">
+    <!-- Navigation Sidebar (loaded from nav.html) -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-box">
+      <h2><em>it is sometimes ── </em></h2>
+      <hr>
+      <p>Instead of saying one can only do one specific thing, I like to say: "It is sometimes --"</p>
+      <p>background image of site from <strong>OMORI's game files</strong> via this <a href="https://voyager.neocities.org/whitespace">site</a></p>
+      
+      <div class="mobile-warning">
+  <strong>📱 This site is best viewed on a desktop browser.</strong>
 </div>
-<div class="boxtwo">
-  <a href="http://users.smartgb.com/g/g.php?a=s&i=g19-02292-da"><img alt="Guestbook" border="0" src="http://extras.smartgb.com/b/gb_80x40.gif" width="80" height="40"></a>
-  <a href="https://smtmsdeau.neocities.org/"><img src="Button.png"></a> 
-  <a href="https://smtmsdeau.neocities.org/">it is sometimes by deauberry</a> © 2025 by <a href="https://smtmsdeau.neocities.org/about">Deauberry</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
-</div>
+            <a href="https://smtmsdeau.neocities.org/">it is sometimes by deauberry</a> © 2025 by <a href="https://smtmsdeau.neocities.org/about">Deauberry</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+    </main>
+  </div>
+  
+
+  <!-- Load nav.html -->
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+
 </body>
 </html>
