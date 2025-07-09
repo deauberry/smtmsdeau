@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>it is sometimes - Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation Sidebar (reused from nav.html) -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Blog Content -->
+    <main class="main-box">
+      <h2><em>blog archive</em></h2>
+      <hr>
+
+      <!-- Blog Entry 1 -->
+      <section class="blog-entry">
+        <h3>02-07-25</h3>
+        <p>Maybe Creativity Was Never About the End.</p>
+        <a href="Blogs/2-7-25.html">Read more →</a>
+      </section>
+
+      <!-- Blog Entry 2 -->
+      <section class="blog-entry">
+        <h3>05-07-25</h3>
+        <p>I wish that love had rules</p>
+        <a href="#">Read more →</a>
+      </section>
+
+      <!-- Add more entries as needed -->
+    </main>
+  </div>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
