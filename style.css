@@ -5,12 +5,18 @@ body {
   font-family: garamond;
   background-image: url("Bgimg.png"); 
   background-size: cover;                 
-  background-position: center;            
-  background-repeat: no-repeat;       
-  background-attachment: fixed;
+  background-position: center;      
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
   color: darkolivegreen;
   text-align: left;
+  height:auto;
   overflow: auto;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* === Container Layout === */
@@ -23,6 +29,8 @@ body {
   margin: 40px auto;
   padding: 0 20px;
   box-sizing: border-box;
+  min-height: 120vh;
+  overflow: auto;
 }
 
 
