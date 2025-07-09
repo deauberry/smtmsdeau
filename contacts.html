@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>it is sometimes - About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation Sidebar (loaded from nav.html) -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-box">
+      <h2><em>where you can find me</em></h2>
+      <hr>
+      <ul>
+        <li><a href="https://deauberry.carrd.co/">carrd</a></li>
+        <li><a href="https://ko-fi.com/deauberry">kofi</a></li>
+        <li><a href="https://www.instagram.com/deau.berry?igsh=MXdhcm4yY2J4ZHRrMQ==">instagram</a></li>
+        <li><a href="https://youtube.com/@deaunarts?si=4vxiyNYtiQY9uzwZ">youtube</a></li>
+        <li><a href="https://x.com/deauberry?s=21">twitter</a></li>
+        <li><a href="https://www.tiktok.com/@deauberry?_t=ZS-8xr7VUfREm2&_r=1">tiktok</a></li>
+      </ul>
+      <p>commission is via ko-fi! VGEN unavailable</p>
+      <p>last updated: 08/07/25</p>
+    </main>
+  </div>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
