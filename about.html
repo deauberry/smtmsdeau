@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>it is sometimes - about</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation Sidebar (loaded from nav.html) -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-box">
+      <h1><em>about</em></h1>
+      <hr>
+      <p>Sometimes I wonder about the things one can do—because creativity is limitless.
+So instead of saying I only do one specific thing, I like to say:
+“It is sometimes.”</p>
+<p>it is sometimes that I write, draw, sing, or create!</p>
+      <h2>so what is "it is sometimes"?</h2>
+      <p><em>it is sometimes</em> is a website made by <strong>deauberry</strong>, the webmaster behind this site. Here, you will find various and curated works created by the webmaster themself.</p>
+      <hr>
+      <h2>the webmaster</h2>
+      <p>Hi! My name is <strong>Deau</strong> and I love creating stuff. I am an average person who happens to do a lot of things and is into <em>a LOT</em> of things. When it comes to talking about myself, this, I'm not really good at..</p>
+      <p>here are some random things to know about me</p>
+<ul>
+  <li>sometimes I work as an artist</li>
+  <li>im autistic and I require a huge special need in terms socializing and sensory issues</li>
+  <li>i am a female</li>
+  <li>i love mycology and biology</li>
+  <li>i love to read books and some interesting blogs</li>
+  <li>i am into nostalgiacore or whatever that is --</li>
+  <li>i love the mornings but I love the night more</li>
+  <li>i write songs and poems, sometimes I write editorial-like pieces that I then establish as just "blogs"</li>
+</ul>
+<h2>categorized interests</h2>
+<p><em><strong>media/shows</strong></em></p>
+<ul>
+  <li>star wars trilogy</li>
+  <li>doctor who</li>
+  <li>wandavision</li>
+  <li>doctor strange</li>
+  <li>steven universe</li>
+  <li>adventure time</li>
+  <li>masterchef canada</li>
+  <li>kitchen nightmares</li>
+</ul>
+<p><em><strong>books</strong></em></p>
+<ul>
+  <li>suicide notes</li>
+  <li>pride and prejudice</li>
+  <li>all the bright places</li>
+  <li>playlist for the dead</li>
+  <li>wolf hall: bring up the bodies</li>
+  <li>we philologists</li>
+</ul>
+<p><em><strong>games</strong></em></p>
+<ul>
+  <li>minecraft(both lagva and bugrock jaja)</li>
+  <li>undertale</li>
+  <li>roblox</li>
+  <li>arknights</li>
+  <li>osu!</li>
+</ul>
+<p><em><strong>music</strong></em></p>
+<ul>
+  <li>cavetown - boys will be bugs</li>
+  <li>chappell roan - pink pony club</li>
+  <li>bts - i need u</li>
+  <li>ikon - adore you</li>
+  <li>imogen heap - headlock</li>
+  <li>joji - will he</li>
+  <li>arctic monkeys - why'd you only call me when you're high</li>
+  <li>billie eilish - bored</li>
+  <li>claude debussy - reverie</li>
+  <li>marina- oh no!</li>
+  <li>the marias - no one noticed</li>
+</ul>
+    </main>
+  </div>
+
+  <!-- Load shared nav -->
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
