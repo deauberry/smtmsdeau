@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>it is sometimes - About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation Sidebar (loaded from nav.html) -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-box">
+      <h2><em>projects</em></h2>
+      <hr>
+      <h3>ᯓ 08/2022 Hooman Needs Catch</h3>
+      <p>a pico8 game that i coded last 2022 but lost the account that I used to make it</p>
+      <section class="art-gallery">
+        <div class="gallery">
+     <img src="https://i.postimg.cc/30HCyycS/IMG-4861.webp" alt="IMG-4861"/><br/><br/>
+<img src="https://i.postimg.cc/y3Xh01qV/IMG-4862.webp" alt="IMG-4862"/><br/><br/>
+<img src="https://i.postimg.cc/bDn9N03S/IMG-4864.webp" alt="IMG-4864"/><br/><br/>
+      </div>
+  </section>
+  <p><a href="https://www.lexaloffle.com/bbs/cart_info.php?
+cid=sabehoom-0&mode=edit">link to play the game</a></p>
+          <p>images are from my personal instagram account. I also made the art cover but unfortunately lost the original file. it was just my first test try in terms of game developing.</p>
+      <p>last updated: 08/07/25</p>
+    </main>
+  </div>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
