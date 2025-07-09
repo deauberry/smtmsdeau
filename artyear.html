@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <title>it is sometimes - About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navigation Sidebar (loaded from nav.html) -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-box">
+      <h2><em>artworks by year</em></h2>
+      <hr>
+      <ul>
+        <li><a href="2025art.html">2025</a></li>
+      </ul>
+    
+      <p>last updated: 08/07/25</p>
+    </main>
+  </div>
+
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
