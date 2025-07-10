@@ -95,7 +95,7 @@ hr {
 
 .art-gallery h2 {
   color: darkolivegreen;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 1.4em;
   border-bottom: 2px solid darkolivegreen;
   padding-bottom: 5px;
@@ -103,9 +103,9 @@ hr {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .gallery img {
